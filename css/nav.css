@@ -1,0 +1,31 @@
+/* nav--bar css */
+
+.header .nav__bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top:22px;   
+}
+.header .nav__bar .nav__bar--iteam {
+    display: flex;
+    list-style: none;
+}
+.header .nav__bar .nav__bar--iteam li{
+    color:#fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.header .nav__bar .nav__bar--iteam li:not(:last-child) {
+    margin-right: 36px;
+}
+.header .nav__bar  a{
+    color:#fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.header .nav__bar  a i{
+    margin-right: 8px;
+}
