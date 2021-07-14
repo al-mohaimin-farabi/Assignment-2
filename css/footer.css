@@ -1,0 +1,55 @@
+/* -------------------------
+    footer section start 
+------------------------- */
+.footer{
+    width: 100%;
+    margin:169px 0px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .web-trademark{
+    text-align: center;
+} 
+.footer .web-trademark img{
+    width: 483.87px;
+    height: 110px;
+    margin: 0px;
+    padding:0px;
+}
+.footer .social-link ul{
+    list-style: none;
+    text-align: center;
+    margin:0px 0px 10px;
+}
+.footer .social-link ul li{
+    display: inline-block;
+    margin:0px 14px;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #E7E7E8; 
+}
+.footer .social-link ul li a {
+    line-height: 52px;
+    font-size: 28px;
+    color:#969BAB;
+    transition: all .5s linear;
+}
+.footer .social-link ul li a:hover {
+    line-height: 52px;
+    color:#E02C6D;
+}
+.footer .copyright {
+    text-align: center;
+}
+.footer .copyright p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin:18px 0px 0px;
+}
+/* -------------------------
+    footer section end
+------------------------- */

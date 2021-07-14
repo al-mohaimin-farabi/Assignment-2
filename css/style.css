@@ -16,9 +16,12 @@
 a, a:hover, a:focus{
     text-decoration: none;
 }
+ul, li{
+    padding: 0;
+    margin: 0; 
+}
 .container{
     max-width: 1140px;
-    min-width: 840px;
 }
 .btn{
     background-color: #E02C6D;
@@ -29,6 +32,7 @@ a, a:hover, a:focus{
     line-height: 24px;
     display: inline-block;
     transition: transform .3s linear;
+    text-transform: capitalize;
 }
 .btn > i {
     margin-left: 8px ;
@@ -36,7 +40,7 @@ a, a:hover, a:focus{
 }
 .btn:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-    transform: scale(1.1) translateX(20px);
+    transform: skew(-16deg) translateX(-10px);
 }
 .heading{
     width: 100%;
@@ -126,7 +130,10 @@ a, a:hover, a:focus{
 .main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
 }
 .top__players {
     display: grid;
@@ -138,7 +145,6 @@ a, a:hover, a:focus{
 .top__players .top__players--box{
     padding: 15px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2);
-
 }
 .top__players .top__players--box .top__players--img-box img{
     width: 300px;
@@ -157,8 +163,8 @@ a, a:hover, a:focus{
     margin-top:10px;
 }
 .top__players .view__more--button {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -173,12 +179,13 @@ a, a:hover, a:focus{
     background-color: transparent;
     padding: 0px 0px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 32px;
+    line-height: 42px;
     pointer-events: none;
 }
 .top__players .view__more--button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 .top__players .view__more--button:hover .btn {
     pointer-events: none;
@@ -187,5 +194,40 @@ a, a:hover, a:focus{
 /* --------------------------------
     Top--players section end
  ----------------------------------*/
+
+
+/* ---------------------------------
+    Highlights Copa America start
+--------------------------------- */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-column-gap:55px;
+}
+.highlights .highlights--caption  {
+    align-self: center;
+}
+.highlights .highlights--caption h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+.highlights .highlights--caption p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 8px 0px 24px;
+}
+.highlights .highlights--banner-img img {
+    width: 567px;
+    height: 427px;
+    border-radius: 3px;
+}
+/* ---------------------------------
+    Highlights Copa America end
+--------------------------------- */
+
 
 
