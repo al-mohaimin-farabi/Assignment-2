@@ -15,6 +15,23 @@
     .footer{
         display: none;
     }
+    .btn:hover{
+        transform: skew(-16deg) translateX(10px);
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 28px 0px 0px;
+        text-transform: capitalize;
+        padding: 0px 15px;
+    }
+    .heading .heading--tittle{
+        font-size: 28px;
+        color: #E02C6D;
+        line-height :48px;
+        font-weight:700;
+    }
     /*  HEADER CSS START */
     .header{
         width: 100%;
@@ -48,6 +65,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
+        padding-bottom: 45px ;
     }
     .top__players .top__players--box{
         width: 80%;
@@ -91,8 +109,77 @@
 --------------------------------- */
 .highlights{
     grid-template-columns: repeat(1, 1fr);
-    }
+    justify-items: center;
+    grid-row-gap:20px;
+    padding: 0px 15px;
+}
 .highlights .highlights--caption  {
-        align-self:flex-start;
-    }
-  }
+    align-self: flex-start;
+}
+.highlights .highlights--caption h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 8px;
+ }
+.highlights .highlights--banner-img {
+    width: 100%;
+    height: 248px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.highlights .highlights--banner-img img {
+    width: 328px;
+    height: 248px;
+    border-radius: 3px;
+    transition: all .5s linear;
+}
+
+/* highlights-video start */
+.talk-of-the-town {
+    width: 100%;
+    margin:15px 0px 0px;
+}
+.talk-of-the-town .heading{
+    width: 100%;
+    text-align: left;
+}
+.talk-of-the-town .iteam-content {
+    width: 270px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 12px;
+}
+.talk-of-the-town .iteam a {
+    color:#E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 15px;
+}
+/* interview */
+.interview{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+     align-items: center; 
+    justify-content: space-around;
+}
+.interview .heading{
+    margin:25px 0px 20px;
+}
+.interview .heading h2{
+    font-size: 30px;
+    line-height: 40px; 
+}
+.interview .interview--content{
+    width: 100%;
+    /* padding: 0px 15px; */
+    display: grid;
+    place-items: center;
+}
+.interview .interview--content iframe{
+    width: 90%;
+    height:200px;
+}
+}
