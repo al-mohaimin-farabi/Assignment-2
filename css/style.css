@@ -177,6 +177,9 @@ a, a:hover, a:focus{
     line-height: 46px;
     pointer-events: none;
 }
+.top__players .view__more--button:hover {
+    transform: scale(1.1);
+}
 .top__players .view__more--button:hover .btn {
     pointer-events: none;
 }
