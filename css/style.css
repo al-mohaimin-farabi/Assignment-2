@@ -16,7 +16,7 @@
 a, a:hover, a:focus{
     text-decoration: none;
 }
-ul, li{
+ul, li, iframe{
     padding: 0;
     margin: 0; 
 }
@@ -82,26 +82,25 @@ ul, li{
 .hero__area .btn{
     margin-top:27px;
 }
- .hero__area .hero__area--title,  .hero__area--banner {
+ /* .hero__area .hero__area--title,  .hero__area--banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
+} */
 .hero__area .hero__area--title h1{
     font-weight:700;
     font-size: 64px;
     line-height: 80px;
     color: #FFFFFF;
 }
-.hero__area--banner {
+/* .hero__area--banner {
     align-items: center;
     position: relative;
-}
+} */
 .hero__area--banner .banner--image {
    width: 556.01px;
    height: 456px;
-
 }
 .hero__area--banner .banner--image:hover{
     animation: banner--image 2s linear  infinite normal;
@@ -147,9 +146,10 @@ ul, li{
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2);
 }
 .top__players .top__players--box .top__players--img-box{
-    width: 300px;
+    width: 100%;
     height: 256px;
     overflow: hidden;
+    text-align: center;
 }
 .top__players .top__players--box .top__players--img-box img{
     width: 300px;
@@ -163,6 +163,7 @@ ul, li{
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
+    margin-top: 10px;
 }
 .top__players .top__players--box .players-tittle p{
     font-weight: normal;
@@ -183,7 +184,7 @@ ul, li{
     border-radius: 50%;
     transition: transform .5s linear;
 }
-.top__players .view__more--button .btn i {
+.top__players .view__more--button a i {
     color:#fff;
     background-color: transparent;
     padding: 0px 0px;
@@ -232,10 +233,19 @@ ul, li{
     line-height: 28px;
     margin: 8px 0px 24px;
 }
+.highlights .highlights--banner-img {
+    width: 567px;
+    height: 427px;
+    overflow: hidden;
+}
 .highlights .highlights--banner-img img {
     width: 567px;
     height: 427px;
     border-radius: 3px;
+    transition: all .5s linear;
+}
+.highlights .highlights--banner-img:hover img {
+    transform: scale(1.1);
 }
 /* ---------------------------------
     Highlights Copa America end
@@ -291,4 +301,20 @@ ul, li{
 ------------------------ */
 
 
+/* -----------------
+    interview start
+--------------------- */
 
+.interview{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.interview .heading{
+    margin:55px 0px 20px;
+}
+/* -----------------
+    interview end
+--------------------- */

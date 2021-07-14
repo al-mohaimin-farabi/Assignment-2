@@ -1,0 +1,98 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* global css */
+    .container{
+        width: 100%;
+    }
+    .nav__bar{
+        display: none !important;
+    }
+    .footer{
+        display: none;
+    }
+    /*  HEADER CSS START */
+    .header{
+        width: 100%;
+        background-color: #2D25A0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 66px;
+    }
+    .hero__area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:32px ;
+        justify-items: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0px 15px;
+    }
+    .hero__area .hero__area--title h1{
+        font-size: 38px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+    .hero__area--banner .banner--image {
+        width: 100%;
+        height: auto;
+     }
+     /* Top--players section start */
+     .top__players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .top__players .top__players--box{
+        width: 80%;
+    }
+    .top__players .top__players--box .top__players--img-box{
+        width: 100%;
+        height: 256px;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+    .top__players .top__players--box .top__players--img-box img{
+        width: 300px;
+        height: 256px;
+        transition: all .5s ease-in-out;
+    }
+    .top__players .view__more--button {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E02C6D;
+        border-radius: 50%;
+        transition: transform .5s linear;
+    }
+    .top__players .view__more--button a i {
+        color:#fff;
+        background-color: transparent;
+        padding: 0px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        pointer-events: none;
+    }
+
+    /* ---------------------------------
+    Highlights Copa America start
+--------------------------------- */
+.highlights{
+    grid-template-columns: repeat(1, 1fr);
+    }
+.highlights .highlights--caption  {
+        align-self:flex-start;
+    }
+  }
