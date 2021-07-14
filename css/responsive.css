@@ -9,9 +9,6 @@
     .container{
         width: 100%;
     }
-    .nav__bar{
-        display: none !important;
-    }
     .btn:hover{
         transform: skew(-16deg) translateX(10px);
     }
@@ -191,9 +188,6 @@
     .container{
         width: 100%;
     }
-    .nav__bar{
-        display: none !important;
-    }
     .btn:hover{
         transform: skew(-16deg) translateX(10px);
     }
@@ -312,7 +306,7 @@
     overflow:hidden;
 }
 .highlights .highlights--banner-img img {
-    width: 100%;
+    width: 95%;
     height: auto;
     border-radius: 3px;
     transition: all .5s linear;
@@ -362,3 +356,200 @@
 }
     
 }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* global css */
+    .container{
+        width: 100%;
+    }
+   
+    .btn:hover{
+        transform: skew(-16deg) translateX(10px);
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 28px 0px 0px;
+        text-transform: capitalize;
+        padding: 0px 0px;
+    }
+    .heading .heading--tittle{
+        font-size: 28px;
+        color: #E02C6D;
+        line-height :48px;
+        font-weight:700;
+        padding: 0px 10px;
+    }
+    /*  HEADER CSS START */
+    .header{
+        width: 100%;
+        background-color: #2D25A0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 66px;
+    }
+    .hero__area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:65px ;
+        justify-items: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0px 15px;
+    }
+    .hero__area .hero__area--title h1{
+        font-size: 38px;
+        padding: 0px 10px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+    .hero__area--banner .banner--image {
+        width: 95%;
+        height: auto;
+     }
+     /* Top--players section start */
+     .top__players {
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        grid-gap: 30px;
+        padding: 60px 0px 165px;
+    }
+    .top__players .top__players--box{
+        padding: 15px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2);
+    }
+    .top__players .top__players--box .top__players--img-box{
+        width: 100%;
+        height: 256px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .top__players .top__players--box .top__players--img-box img{
+        width: 300px;
+        height: 256px;
+        transition: all .5s ease-in-out;
+    }
+    .top__players .top__players--box:hover .top__players--img-box img{
+        transform: scale(1.05);
+    }
+    .top__players .view__more--button {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E02C6D;
+        border-radius: 50%;
+        transition: transform .5s linear;
+    }
+    .top__players .view__more--button {
+        width: 95px;
+        height: 95px;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E02C6D;
+        border-radius: 50%;
+        transition: transform .5s linear;
+    }
+    .top__players .view__more--button a i {
+        color:#fff;
+        background-color: transparent;
+        padding: 0px 0px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        pointer-events: none;
+    }
+
+    /* ---------------------------------
+    Highlights Copa America start
+--------------------------------- */
+.highlights{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap:20px;
+    padding: 0px 15px;
+}
+.highlights .highlights--caption  {
+    align-self: flex-start;
+}
+.highlights .highlights--caption h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 8px;
+ }
+.highlights .highlights--banner-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* display: grid;
+    place-items: center; */
+    overflow:hidden;
+}
+.highlights .highlights--banner-img img {
+    width: 95%;
+    height: auto;
+    border-radius: 3px;
+    transition: all .5s linear;
+}
+
+/* highlights-video start */
+.talk-of-the-town {
+    width: 100%;
+    margin:15px 0px 0px;
+}
+.talk-of-the-town .heading{
+    width: 100%;
+    text-align: left;
+}
+.talk-of-the-town .iteam-content {
+    width: 270px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 12px;
+}
+.talk-of-the-town .iteam a {
+    color:#E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 15px;
+}
+/* interview */
+.interview{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+     align-items: center; 
+    justify-content: space-around;
+}
+.interview .heading{
+    margin:25px 0px 20px;
+}
+.interview .interview--content{
+    width: 100%;
+    /* padding: 0px 15px; */
+    display: grid;
+    place-items: center;
+}
+.interview .interview--content iframe{
+    width: 90%;
+    height:350px;
+}
+    
+  }
