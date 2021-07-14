@@ -38,6 +38,19 @@ a, a:hover, a:focus{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     transform: scale(1.1) translateX(20px);
 }
+.heading{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 28px 0px 0px;
+    text-transform: capitalize;
+}
+.heading .heading--tittle{
+    font-size: 28px;
+    color: #E02C6D;
+    line-height :40px;
+    font-weight:700;
+}
 /* ----------------------------
      GLOBAL CSS END
 ------------------------------ */
@@ -49,10 +62,10 @@ a, a:hover, a:focus{
 
 .header{
     width: 100%;
-    height: 100vh;
     background-color: #2D25A0;
     display: flex;
     justify-content: center;
+    padding-bottom: 86px;
 }
 .hero__area{
     display: grid;
@@ -96,7 +109,7 @@ a, a:hover, a:focus{
         transform: translateY(0px);
     }
    50%{
-        transform:translateY(30px);
+        transform:translateY(35px);
     }
     100%{
         transform:translateY(0px);
@@ -106,5 +119,73 @@ a, a:hover, a:focus{
      HEADER CSS END
 ------------------------------ */
 
+/* --------------------------------
+    Top--players section start
+ ----------------------------------*/
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.top__players {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    grid-gap: 30px;
+    padding: 60px 0px 165px;
+}
+.top__players .top__players--box{
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2);
+
+}
+.top__players .top__players--box .top__players--img-box img{
+    width: 300px;
+    height: 256px;
+}
+.top__players .top__players--box .players-tittle h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+}
+.top__players .top__players--box .players-tittle p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    margin-top:10px;
+}
+.top__players .view__more--button {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E02C6D;
+    border-radius: 50%;
+    transition: transform .5s linear;
+}
+.top__players .view__more--button .btn i {
+    color:#fff;
+    background-color: transparent;
+    padding: 0px 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    pointer-events: none;
+}
+.top__players .view__more--button:hover {
+    transform: scale(1.2);
+}
+.top__players .view__more--button:hover .btn {
+    pointer-events: none;
+}
+
+/* --------------------------------
+    Top--players section end
+ ----------------------------------*/
 
 

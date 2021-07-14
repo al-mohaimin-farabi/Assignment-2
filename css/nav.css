@@ -11,15 +11,6 @@
     display: flex;
     list-style: none;
 }
-.header .nav__bar .nav__bar--iteam li{
-    color:#fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-}
-.header .nav__bar .nav__bar--iteam li:not(:last-child) {
-    margin-right: 36px;
-}
 .header .nav__bar  a{
     color:#fff;
     font-weight: 500;
@@ -29,3 +20,19 @@
 .header .nav__bar  a i{
     margin-right: 8px;
 }
+.header .nav__bar .nav__bar--iteam li {
+    transition:  all 0.5s;
+}
+.header .nav__bar .nav__bar--iteam li:not(:last-child) {
+    margin-right: 36px;
+}
+.header .nav__bar .nav__bar--iteam li:hover {
+    transform: scale(1.1);
+}
+.header .nav__bar .nav__bar--iteam li:hover a {
+    color: #E02C6D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
