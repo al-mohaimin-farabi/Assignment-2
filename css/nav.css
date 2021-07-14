@@ -36,3 +36,16 @@
     line-height: 24px;
 }
 
+/* responsive nav__bar */
+@media (min-width:100px) and (max-width:1180px) {
+    .nav__bar ul{
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 1180px){
+    .nav-toggle-button{
+        display:none !important;
+    }
+}
