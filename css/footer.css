@@ -53,3 +53,41 @@
 /* -------------------------
     footer section end
 ------------------------- */
+
+
+/* footer responsive */
+@media (min-width: 320px) and (max-width: 480px){
+    .footer .web-trademark img{
+        width: 271px;
+        height: 63px;
+        margin: 0px;
+        padding:0px;
+    }
+    .footer .social-link ul{
+        list-style: none;
+        text-align: center;
+        margin:0px 0px 10px;
+    }
+    .footer .social-link ul li{
+        display: inline-block;
+        margin:0px 14px;
+        text-align: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #E7E7E8; 
+    }
+    .footer .social-link ul li:not(:last-child){ 
+        margin:0px 5px;
+    }
+    .footer .social-link ul li a {
+        line-height: 42px;
+        font-size: 22px;
+        color:#969BAB;
+        transition: all .5s linear;
+    }
+    .footer .social-link ul li a:hover, .social-link:focus ul li a{
+        line-height: 42px;
+        color:#E02C6D;
+    }
+}
