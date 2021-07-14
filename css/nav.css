@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   margin-top:22px;   
+    margin-top:22px;   
 }
 .header .nav__bar .nav__bar--iteam {
     display: flex;
@@ -35,4 +35,5 @@
     font-size: 16px;
     line-height: 24px;
 }
+
 
